@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Screenshot 2025-10-23 114237.png">
+
+    <title>Amakhd AI assitant</title>
+</head>
+<body>
+    <!-- styles here -->
+    <style>
+        .cursive{color: rgb(138, 2, 241); background: linear-gradient(rgb(85, 3, 162),pink);}
+        .cursive{font-family: cursive;}
+                                                   
+                                                         /* back grond color */
+                                                         body {
+     background-color: rgb(191, 135, 244);
+    }
+
+        
+        
+  
+  
+  
+  
+  
+  .summary{color: blueviolet;} 
+        .aiintro{color: rgb(46, 0, 89);}
+        
+        .introcheck{color: rgb(50, 2, 95);}
+        
+        /* logo */
+        /* for image 1 */
+        
+        .images1{ float:left;
+          margin-left: 15px; 
+          width: 300px;
+          height: auto;
+          border-radius: 20px;
+          animation: rise-and-fade1;
+          animation-timeline: view();  
+          position: relative;
+          top: 0px;   
+        }
+        @keyframes rise-and-fade1{
+        
+        0%{
+          opacity:0;
+        }
+        25%{
+          opacity:1;
+        }
+        50%{opacity:1;}
+        
+        75%{opacity:1;}
+        100%{
+          opacity:0;
+          
+        }
+        
+        }
+          .images1:hover{
+     position:relative;
+     top: -10px;
+     transition: 0.5s ease;
+  }
+        
+                               /* for image 2 */
+        .images2{ float:middle;
+  margin-left: 15px;
+  width: 300px;
+  height: auto;
+  border-radius: 20px; 
+  animation: rise-and-fade2;
+  animation-timeline: view();
+  position: relative;
+  top:0px;
+
+}
+
+
+
+ @keyframes rise-and-fade2{
+        
+        0%{
+          opacity:0;
+        }
+        25%{
+          opacity:1;
+        }
+        50%{opacity:1;}
+        
+        75%{opacity:1;}
+        100%{
+          opacity:0;
+        }
+        
+        }
+          .images2:hover{
+     position:relative;
+     top: -10px;
+     transition: 0.5s ease;
+  }
+        
+                           /* for image 3 */
+        .images3{
+  margin-left: 15px; 
+  width: 300px;
+  height: auto;
+  border-radius: 20px; 
+  animation: rise-and-fade3;
+  animation-timeline: view();
+  position: relative;
+  top: 0px;
+}
+
+
+ @keyframes rise-and-fade3{
+        
+        0%{
+          opacity:0;
+        }
+        25%{
+          opacity:1;
+        }
+        50%{opacity:1;}
+        
+        75%{opacity:1;}
+        100%{
+          opacity:0;
+        }
+        
+        }
+
+  .images3:hover{
+     position:relative;
+     top: -10px;
+     transition: 0.5s ease;
+  }
+
+
+
+
+
+
+        
+        
+        /* navigaton here */
+        
+        
+        
+        .nav li {
+          float: left;
+          list-style-type: none;
+          margin: 10px;
+        }
+        
+.nav li a {
+  text-decoration: none;
+  color: rgb(136, 53, 214);
+}
+
+.nav{background-color: rgb(64, 2, 122);
+}                                
+.nav ul{overflow:auto;}
+.
+
+
+/* credits */
+   .credits-section {
+  display: flex; 
+  align-items: center; 
+}
+/* curved images  */
+#round{margin-left: 15px;
+  width: 150px;
+  height: auto;
+  border-radius: 50%;    
+  border: solid 3.5px rgb(47, 2, 89);} 
+  
+  .details{color: rgb(224, 190, 255);}              
+  
+  .nav a{
+    color:blueviolet;
+    text-decoration: none;
+    transition: color 1 ease;  
+  }
+  .nav a:hover{
+    color:rgb(181, 92, 249);
+    font-size: 18px;
+  }
+  
+  .logo {
+    float: right;
+   margin: 40px 200px;
+   width: 300px;
+   height: auto;
+   border-radius: 20px;
+   animation:logo;
+   transition: color 1 ease;
+   transition-delay:1;
+   background-color: blueviolet;
+   padding:10px;
+   position: relative;
+   top: 10px;;
+  }
+  
+  .logo:hover{
+  
+    transition:0.3s ease;
+    background-color: rgb(125, 0, 243);
+    transform: translatey(60);
+    position: relative;
+    top:5px;
+    
+  } 
+  
+  .heading{color: rgb(47, 2, 89);
+           position: relative;
+           top:0px;;
+           animation:head;
+           animation-timeline:view();
+
+     }
+.heading:hover{
+  position: relative;
+  top: -5px;
+  transition: 0.3s ease;
+  color: rgb(110, 52, 165);
+  
+} 
+
+@keyframes head{
+  0%{
+    opacity:0.3;
+    margin-left:-100px;
+  }
+  100%{
+    opacity: 1;
+    margin-left:10px;
+  }  
+
+
+
+}
+
+
+.ailink{
+  background-color:rgb(82, 9, 150);
+  text-decoration: wavy;
+  position: relative;
+  top:-20px;
+  font-size:20px;
+  color: rgb(117, 27, 145);
+  margin-left: 520px;
+}
+
+.ailink:hover{
+  position: relative;
+  top: -25px;
+  background-color:rgb(98, 47, 145);
+  color: rgb(162, 63, 193);
+  transition: .5s ease;
+
+}
+
+.emoji{
+ 
+  position: relative;
+  top:100px;
+  font-size:70px;
+  animation:emoji;
+  animation-timeline:view();
+  color: blueviolet;
+}
+
+@keyframes emoji{
+  0%{
+    opacity:0;
+    margin-left:20;
+  }
+  50%{
+    opacity:1;
+    margin-left:900px;
+  }
+  100%{
+    opacity:1;
+    margin-left:900px;
+  }
+}
+
+.ayush{
+  color: rgb(47, 2, 89);
+           position: relative;
+           top:0px;;
+           animation:ayush;
+           animation-timeline:view();
+}
+.ayush:hover{
+    position: relative;
+  top: -5px;
+  transition: 0.3s ease;
+  color: rgb(110, 52, 165);
+}
+  
+@keyframes ayush{
+    0%{
+    opacity:0.3;
+    margin-left:100px;
+  }
+  100%{
+    opacity: 1;
+    margin-left:10px;
+  }  
+}
+  
+.hardik{
+  color: rgb(47, 2, 89);
+           position: relative;
+           top:0px;;
+           animation:hardik;
+           animation-timeline:view();
+}
+.hardik:hover{
+    position: relative;
+  top: -5px;
+  transition: 0.3s ease;
+  color: rgb(110, 52, 165);
+}
+  
+@keyframes hardik{
+    0%{
+    opacity:0.3;
+    margin-left:100px;
+  }
+  100%{
+    opacity: 1;
+    margin-left:8px;
+  }  
+}
+.maulik{
+  color: rgb(47, 2, 89);
+           position: relative;
+           top:0px;;
+           animation:maulik;
+           animation-timeline:view();
+}
+.maulik:hover{
+    position: relative;
+  top: -5px;
+  transition: 0.3s ease;
+  color: rgb(110, 52, 165);
+}
+  
+@keyframes maulik{
+    0%{
+    opacity:0.3;
+    margin-left:100px;
+  }
+  100%{
+    opacity: 1;
+    margin-left:-6px;
+  }  
+}
+.digvijay{
+  color: rgb(47, 2, 89);
+           position: relative;
+           top:0px;;
+           animation:digvijay;
+           animation-timeline:view();
+}
+.digvijay:hover{
+    position: relative;
+  top: -5px;
+  transition: 0.3s ease;
+  color: rgb(110, 52, 165);
+}
+  
+@keyframes digvijay{
+    0%{
+    opacity:0.3;
+    margin-left:100px;
+  }
+  100%{
+    opacity: 1;
+    margin-left:-50px;
+  }  
+}
+
+.kanishk{
+  color: rgb(47, 2, 89);
+           position: relative;
+           top:0px;;
+           animation:kanishk;
+           animation-timeline:view();
+}
+.kanishk:hover{
+    position: relative;
+  top: -5px;
+  transition: 0.3s ease;
+  color: rgb(110, 52, 165);
+}
+  
+@keyframes kanishk{
+    0%{
+    opacity:0.3;
+    margin-left:100px;
+  }
+  100%{
+    opacity: 1;
+    margin-left:-350px;
+  }  
+}
+  
+
+  
+  
+
+
+
+
+</style> 
+
+
+            <!-- HEADING -->    
+   
+  
+   
+  
+  
+            <h1 id="title" class="cursive">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AMAKHD AI <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Your <Strong>friend like</Strong> AI assitant</h1>
+   
+ 
+      
+ 
+ 
+            <!-- navigation -->
+   
+ <header>
+      <nav class="nav">
+            <ul>
+      
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="credits.html">Credits</a></li>
+      <li><a href="loginn.html">Login</a></li>
+       </ul>
+      </nav>
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+   
+   <!-- intro of AI -->
+   <p id="aiintro" class="aiintro">Hi there, I’m Amakhd — your friendly AI companion here to help you find calm in the middle of life’s noise. 🌿 <br>
+
+I understand that stress can feel overwhelming sometimes, and that’s okay — you don’t have to face it alone. <br> I’m here to  listen, support, and guide you through techniques that can ease your mind and bring you peace. <br>
+
+Whether you want to talk about what’s been weighing on your heart,take a moment to breathe, or simply have <br> someone who understands without judgment — I’ll be right here with you.
+
+Let’s take this one step at a time, together. 💛</p>
+
+
+<!-- logo -->
+    <img src="logo.png"alt="enable to open Image" class="logo">
+    
+  
+
+    <!-- basic into of user -->
+    <p class="introcheck">Let me know you enter your basic details below </p>
+
+    <form action="mainai.html">
+       name:<input type="text" id="name" class="introcheck" placeholder="Enter your name">
+       <P class="introcheck">which describe you best</P>
+       Student<input type="radio" name="describer"> <br>Teacher<input type="radio" name="describer"><br>worker<input type="radio" name="describer"><br>other<input type="radio" name="describer">
+      <br> <br> Your gender: <br> Male<input type="radio" name="gender"> <br> Female<input type="radio" name="gender"> <br> others<input type="radio" name="gender">
+
+      <br> Your age:<input type="number">
+
+    
+      <br> <p>Thanks for sharing you details with me</p>
+      
+      <a href="mainai.html" class="ailink">Try to intract with Ai</a>
+
+ 
+    
+    
+    
+    
+    
+    <h2 class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What AMAKHD Ai do?</h2>
+
+    <h2 class="emoji">😊:Keep smilling</h2>
+  
+      <!-- img2 -->
+  
+    <img src="img1.jpeg" alt="unable to open image " class="images1">
+    <img src="img2.jpeg" alt="unable to open image " class="images2">
+    <img src="img3.png" alt="byebye" class="images3">
+    <br>
+    <P class="summary">Many students suffer from stress due to study and&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when Students got known by are web site&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our AI helps them in stress in a fun way by 
+      <br> many more reasons.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;our web site helps them.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offering games and telling joke,our website <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is desinged in such way that it can understand user fellings.</P>
+
+ 
+ <br><br><br><br>
+
+                                                  <!-- credits here -->
+      <h2 class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Credits</h2>
+<div class="credits-section">
+                                                   <!-- ayush here -->
+                                           
+    
+    <h3 class="ayush">Ayush yadav:</h3>
+    <p class="details">A great contributer also our team leader and is great at making PowerPoint presentations and coming up with creative ideas. He’s more of the “vision and slides” guy than the “debugging” one.He always tries to motivate us and present our work with confidence.</p>
+</div>
+     <br>
+<br>
+
+                                                     <!-- hardik here -->
+
+<div class="credits-section">
+      
+    <h3 class="hardik">Hardik upadhya:</h3>
+    <p class="details">A helping person of the team that helps in many tasks.
+    </div>
+  <br>
+<br>  
+                                                              <!-- maulik here -->
+
+                                                              <div class="credits-section">
+        
+        <h3 class="maulik">Maulik vyas:</h3>
+        <p class="details">A funny guy that keeps the team's mood always good and always answere in a funny way.
+         </div>
+         <br>
+<br>
+
+                                                              <!-- digvijay here -->
+<div class="credits-section">
+      
+        <h3 class="digvijay">Digvijay singh:</h3>
+        <p class="details">The main coder of the team that makes this website and also help to make the AI</p>
+        </div>
+        <br>
+<br>
+
+                                              <!-- kaninsk here -->
+
+<div class="credits-section">
+        <h3 class="kanishk">kanishk meghwal:</h3>
+        <p class="details">Also the main coder that helps to make the ai in this website</p>
+        </div>
+        <br>
+<br>
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
