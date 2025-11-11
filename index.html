@@ -10,20 +10,20 @@
 <body>
     <!-- styles here -->
     <style>
-        .cursive{color: rgb(138, 2, 241); background: linear-gradient(rgb(85, 3, 162),pink);}
+        .cursive{color: rgb(138, 2, 241); 
+                 background-color: rgb(109, 73, 143);
+                 margin-bottom:30px;
+                
+                 padding:5px;
+        
+        }
+
         .cursive{font-family: cursive;}
                                                    
                                                          /* back grond color */
                                                          body {
-     background-color: rgb(191, 135, 244);
+     background-color: rgb(233, 209, 255);
     }
-
-        
-        
-  
-  
-  
-  
   
   .summary{color: blueviolet;} 
         .aiintro{color: rgb(46, 0, 89);}
@@ -159,9 +159,13 @@
 .nav li a {
   text-decoration: none;
   color: rgb(136, 53, 214);
+  text-align: center;
+  justify-content: center;
 }
 
-.nav{background-color: rgb(64, 2, 122);
+.nav{background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
 }                                
 .nav ul{overflow:auto;}
 .
@@ -203,7 +207,7 @@
    background-color: blueviolet;
    padding:10px;
    position: relative;
-   top: 10px;;
+   top:-10px;;
   }
   
   .logo:hover{
@@ -212,7 +216,7 @@
     background-color: rgb(125, 0, 243);
     transform: translatey(60);
     position: relative;
-    top:5px;
+    top:-20px;
     
   } 
   
@@ -382,6 +386,9 @@
     opacity:0.3;
     margin-left:100px;
   }
+  50%{
+    opacity:1;
+  }
   100%{
     opacity: 1;
     margin-left:-50px;
@@ -407,6 +414,10 @@
     opacity:0.3;
     margin-left:100px;
   }
+  
+  25%{
+    opacity:1;
+  }
   100%{
     opacity: 1;
     margin-left:-350px;
@@ -414,8 +425,55 @@
 }
   
 
+  .aipara{
+    background-color: rgb(113, 84, 140);
+    border-radius:10px;
+    border-width:100px;
+  }
+
+  .nav::before{
+    background:url(ai\ and\ human.png);
+    content:"";
+    position: absolute;
+    z-index:-1;
+    opacity:1;
+  }
+
+  .aicom{
+    text-align: center;
+    align-items:center;
+    background-color:white;
+    color:black;
+  }
+
+
   
-  
+
+  #home:hover{
+    background-color: rgb(185, 184, 184);
+    border-radius: 10px;
+
+  }
+  #about:hover{
+    background-color: rgb(185, 184, 184);
+    border-radius: 10px;
+
+  }
+  #login:hover{
+    background-color: rgb(185, 184, 184);
+    border-radius: 10px;
+
+  }
+  #credits:hover{
+    background-color: rgb(185, 184, 184);
+    border-radius: 10px;
+
+  }
+
+  .details{
+    color: rgb(22, 6, 37);
+  }
+
 
 
 
@@ -423,38 +481,34 @@
 </style> 
 
 
-            <!-- HEADING -->    
-   
-  
-   
-  
-  
-            <h1 id="title" class="cursive">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AMAKHD AI <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Your <Strong>friend like</Strong> AI assitant</h1>
-   
- 
-      
- 
- 
-            <!-- navigation -->
-   
- <header>
-      <nav class="nav">
-            <ul>
-      
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="credits.html">Credits</a></li>
-      <li><a href="loginn.html">Login</a></li>
+
+
+
+
+<header>
+  <section class="aihum">
+    
+    <!-- HEADING -->    
+
+    <nav class="nav">
+      <!-- navigation -->
+      <ul>
+        
+        <h1 id="title" class="nav">AMAKHD AI </h1>
+     
+        <li id="home"><a href="index.html">Home</a></li>
+      <li id="about"><a href="about.html">About</a></li>
+      <li id="credits"><a href="credits.html">Credits</a></li>
+      <li id="login"><a href="loginn.html">Login</a></li>
        </ul>
       </nav>
 </header>
-<br>
-<br>
-<br>
-<br>
-<br>
-   
-   <!-- intro of AI -->
+  <hr>
+    
+    
+    
+    <!-- intro of AI -->
+   <div class="aipara">
    <p id="aiintro" class="aiintro">Hi there, I’m Amakhd — your friendly AI companion here to help you find calm in the middle of life’s noise. 🌿 <br>
 
 I understand that stress can feel overwhelming sometimes, and that’s okay — you don’t have to face it alone. <br> I’m here to  listen, support, and guide you through techniques that can ease your mind and bring you peace. <br>
@@ -462,6 +516,7 @@ I understand that stress can feel overwhelming sometimes, and that’s okay — 
 Whether you want to talk about what’s been weighing on your heart,take a moment to breathe, or simply have <br> someone who understands without judgment — I’ll be right here with you.
 
 Let’s take this one step at a time, together. 💛</p>
+   </div>
 
 
 <!-- logo -->
